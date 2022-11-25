@@ -56,10 +56,13 @@ def predict(features: pd.DataFrame, max_relative_length_diff: float, max_relativ
 
 
 def compute_scores(y_true: pd.Series, y_pred: pd.Series) -> Dict[str, str]:
+    accuracy = 0  # TODO
+    recall = 0  # TODO
+    precision = 0  # TODO
     return {
-        "Accuracy": "{:.2%}".format(accuracy_score(y_true, y_pred)),
-        "Recall": "{:.2%}".format(recall_score(y_true, y_pred)),
-        "Precision": "{:.2%}".format(precision_score(y_true, y_pred)),
+        "Accuracy": "{:.2%}".format(accuracy),
+        "Recall": "{:.2%}".format(recall),
+        "Precision": "{:.2%}".format(precision),
     }
 
 
